@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 async function connect() {
     try{
         await mongoose.connect(
-            "mongodb+srv://vitals:mariukas@cluster0.lzfp2jc.mongodb.net/?retryWrites=true&w=majority",
+            "mongodb+srv://<username>:<password>@cluster0.lzfp2jc.mongodb.net/?retryWrites=true&w=majority",
             { useNewUrlParser: true }
         );
     } catch (err) {
